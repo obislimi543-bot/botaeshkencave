@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bota e Shkencave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#" class="logo">Bota e Shkencave</a>
+      <nav class="nav" aria-label="Navigimi kryesor">
+        <a href="#">Kryefaqja</a>
+        <a href="#about">Rreth nesh</a>
+        <a href="#subjects">Lëndët</a>
+        <a href="#location">Lokacioni</a>
+        <a href="#contact">Kontakti</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-label="Prezantim">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__panel">
+            <p class="hero__badge">Përgatitje për testin e arritshmërisë</p>
+            <h1>Bota e Shkencave</h1>
+            <p class="hero__lead">
+              Kursi më i mirë për nxënësit e klasës së 9-të — matematikë,
+              fizikë, kimi dhe biologji, me fokus te kuptimi dhe rezultatet.
+            </p>
+            <div class="hero__actions">
+              <button type="button" class="btn btn--primary">
+                Regjistrohu
+              </button>
+              <button
+                type="button"
+                class="btn btn--secondary"
+                onclick="scrollToSubjects()"
+              >
+                Shiko lëndët
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section__inner about__grid">
+        <div class="about__visual">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=85&auto=format&fit=crop"
+            alt="Nxënës që punojnë së bashku në klasë"
+            width="600"
+            height="450"
+            loading="lazy"
+          />
+        </div>
+        <div class="about__body">
+          <span class="section__eyebrow">Rreth nesh</span>
+          <h2 class="section__title">Suksesi yt fillon këtu</h2>
+          <p class="section__subtitle">
+            Bota e Shkencave është qendër edukative që u përket nxënësve që duan
+            të thellojnë bazat dhe të përgatiten me besim për testin.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__value">95%</div>
+              <div class="stat__label">Kënaqësi</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">500+</div>
+              <div class="stat__label">Nxënës</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">20+</div>
+              <div class="stat__label">Vite përvojë</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section subjects section--center">
+      <div class="section__inner">
+        <span class="section__eyebrow">Lëndët</span>
+        <h2 class="section__title">Disa prej lëndëve të klasës së 9-të</h2>
+        <p class="section__subtitle">
+          Përgatitje e plotë dhe ushtrime të strukturuara për testin e
+          arritshmërisë.
+        </p>
+
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="subject-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&q=80&auto=format&fit=crop"
+                alt=""
+                width="400"
+                height="250"
+                loading="lazy"
+              />
+            </div>
+            <div class="subject-card__body">
+              <h3>Matematikë</h3>
+              <p>Algjebër, gjeometri dhe zgjidhje problemesh hap pas hapi.</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80&auto=format&fit=crop"
+                alt=""
+                width="400"
+                height="250"
+                loading="lazy"
+              />
+            </div>
+            <div class="subject-card__body">
+              <h3>Fizikë</h3>
+              <p>Mekanikë dhe koncepte të shpjeguara me shembuj praktikë.</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-card__media">
+              <img
+                src="https://images.unsplash.com/photo-1603126857599-f6e314fa1d5a?w=800&q=80&auto=format&fit=crop"
+                alt=""
+                width="400"
+                height="250"
+                loading="lazy"
+              />
+            </div>
+            <div class="subject-card__body">
+              <h3>Kimi</h3>
+              <p>Reaksione, tabela periodike dhe ushtrime të përzgjedhura.</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-card__media">
+              <img
+                src="images/biology.jpg"
+                alt="Gjethe jeshile — natyrë dhe biologji"
+                width="400"
+                height="250"
+                loading="lazy"
+              />
+            </div>
+            <div class="subject-card__body">
+              <h3>Biologji</h3>
+              <p>Natyra, qeliza dhe ekosisteme — materiale të përmbledhura.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="section location section--center">
+      <div class="section__inner">
+        <span class="section__eyebrow">Lokacioni</span>
+        <h2 class="section__title">Na gjeni këtu</h2>
+        <p class="section__subtitle">
+          Rruga Evlija Qelebija, te Kullat e Lates, Mitrovicë.
+        </p>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299.809245300346!2d20.869131509162415!3d42.890919336763005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353456d171822d1%3A0xf82f601a937afd5e!2sVVR9%2BCM9%2C%20Mitrovic%C3%AB%2040000!5e1!3m2!1sen!2s!4v1774301634886!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact section--center">
+      <div class="section__inner">
+        <span class="section__eyebrow">Kontakti</span>
+        <h2 class="section__title">Na shkruani</h2>
+        <p class="section__subtitle">
+          Plotësoni formularin — zgjidhni një ose më shumë lëndë. Do t’ju
+          përgjigjemi sa më shpejt.
+        </p>
+        <form id="contact-form" class="contact-form" method="post" novalidate>
+          <div class="field-row">
+            <label class="field-label" for="contact-name"
+              >Emri dhe mbiemri
+              <span class="req" aria-hidden="true">*</span></label
+            >
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              placeholder="p.sh. Arben Krasniqi"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="field-row">
+            <label class="field-label" for="contact-email"
+              >Email <span class="req" aria-hidden="true">*</span></label
+            >
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              placeholder="shembull@email.com"
+              required
+              autocomplete="email"
+              inputmode="email"
+            />
+          </div>
+          <div class="field-row">
+            <label class="field-label" for="contact-phone"
+              >Telefoni <span class="field-hint">(opsional)</span></label
+            >
+            <input
+              id="contact-phone"
+              type="tel"
+              name="phone"
+              placeholder="+383 …"
+              autocomplete="tel"
+              inputmode="tel"
+            />
+          </div>
+          <div class="field-row">
+            <label class="field-label" for="contact-grade"
+              >Klasa / niveli
+              <span class="req" aria-hidden="true">*</span></label
+            >
+            <select id="contact-grade" name="grade" required>
+              <option value="">Zgjidhni…</option>
+              <option value="Klasa 9">Klasa 9</option>
+              <option value="Përgatitje për klasën 9">
+                Përgatitje për klasën 9
+              </option>
+              <option value="Tjetër">Tjetër</option>
+            </select>
+          </div>
+          <fieldset class="subject-fieldset">
+            <legend class="field-label">
+              Lëndët që ju interesojnë
+              <span class="req" aria-hidden="true">*</span>
+              <span class="field-hint">(mund të zgjidhni më shumë)</span>
+            </legend>
+            <div class="checkbox-group">
+              <label class="checkbox-row">
+                <input type="checkbox" name="subject" value="Matematikë" />
+                <span>Matematikë</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="subject" value="Fizikë" />
+                <span>Fizikë</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="subject" value="Kimi" />
+                <span>Kimi</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="subject" value="Biologji" />
+                <span>Biologji</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="field-row">
+            <label class="field-label" for="contact-message"
+              >Mesazhi ose pyetje</label
+            >
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="Çfarë dëshironi të dini më shumë?"
+              rows="4"
+            ></textarea>
+          </div>
+          <p class="form-hint">* Fusha të detyrueshme.</p>
+          <div
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+            hidden
+          ></div>
+          <button type="submit" class="btn btn--primary">Dërgo mesazhin</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Bota e Shkencave. Të gjitha të drejtat e
+        rezervuara.
+      </p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
